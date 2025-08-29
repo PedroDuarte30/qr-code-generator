@@ -32,12 +32,21 @@ body {
 }
 
 .container .qr-code-box {
-    height: 180px;
+    height: 0px;
     width: 100%;
-    border: 1px solid #213448;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     border-radius: 3px;
+    transition: all .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .qr-code-box.active {
+    height: 180px;
+    margin-top: 20px;
+    border: 1px solid #213448;
 }
 
 .container .user-input {
