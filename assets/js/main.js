@@ -5,6 +5,7 @@ let generateBtn = document.querySelector(".container .generated-btn");
 
 let generateQr = () => {
     let url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${userInput.value}`;
+    
     qrCode.src = url;
     qrCodeBox.classList.add("active");
 }
